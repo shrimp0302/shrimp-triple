@@ -19,7 +19,7 @@ def index(request):
         output_path = settings.BASE_DIR + "/media/output/output.jpg"
         gray(input_path,output_path)
 
-    return render(request, 'app1/index.html', {
+    return render(request, 'blog/post_list.html', {
         'form': form,
         'obj':obj,
     })
